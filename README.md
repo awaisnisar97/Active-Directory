@@ -27,15 +27,21 @@ https://www.microsoft.com/en-us/software-download/windows10ISO
 <br />
 <br />
 The first virtual machine is going to be our domain controller which is going to house active directory (AD). This virtual machine will have two network adapters, one is going to be used to connect to the outside internet and the other one will be used to connect to the private network of the virtual box that the clients are going to connect to. 
-<img src="https://imgur.com/wBMQKRU.png" height="80%" width="100%" />
+<img src="https://imgur.com/IGhoWMn.png" height="80%" width="100%" />
 
 
 Once the virtual machines are created, we are going to assign server 2019 on it and assign IP addressing for the internal network. The external network will automatically get IP addressing from my home network. Next, we are going to install AD and create our domain, then we will configure NAT and routing so the clients on the private network can reach the internet through the domain controller. 
 <img src="https://imgur.com/DXY8pIg.png" height="80%" width="100%" />
 
+Next we are going to install active directory domain services (ADDS) and create a domain. 
+<img src="hhttps://imgur.com/54oBv3I.png" height="80%" width="100%" />
+<img src="https://imgur.com/JUSeSi1.png" height="80%" width="100%" />
+<img src=".png" height="80%" width="100%" />
+<img src=".png" height="80%" width="100%" />
+
 
 DHCP will be set up on the domain controller, so when we create our windows 10 VM it can automatically get an IP address. Lastly, we run a powershell script which will be obtained for this project, this will automatically create a thousand users in AD. We will create another VM and install windows 10 on it, this VM will be created to the private virtual box network. We are going to name it client 1 and join it to the domain and log in to it using our domain accounts. 
-<img src=".png" height="80%" width="100%" />
+<img src="https://imgur.com/JUSeSi1.png" height="80%" width="100%" />
 
 
 This project provides hands-on experience with core network infrastructure. AD is fundamental for managing users, groups, and resources, offering insight into access control, authentication, and Group Policy management.
