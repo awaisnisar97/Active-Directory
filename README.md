@@ -35,7 +35,7 @@ Once the virtual machines are created, we are going to assign server 2019 on it 
 
 Next we are going to install active directory domain services (ADDS) and create a domain. 
 <img src="hhttps://imgur.com/54oBv3I.png" height="80%" width="100%" />
-<img src="https://imgur.com/JUSeSi1.png" height="80%" width="100%" />
+<img src="https://imgur.com/ww12OKi.png" height="80%" width="100%" />
 <img src=".png" height="80%" width="100%" />
 <img src=".png" height="80%" width="100%" />
 
