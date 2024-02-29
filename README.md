@@ -20,7 +20,8 @@ This project details how to setup a basic home lab running active directory usin
 <p align="center">
 
 Firstly, I installed virtual box which will be used to run the virtual machines on. Subsequently I installed a windows 10 ISO and a server 2019 ISO that I am going to use to install the two operating systems on two separate virtual machines. 
-<img src=" " height="80%" width="100%" />
+https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019
+https://www.microsoft.com/en-us/software-download/windows10ISO
 <br />
 <br />
 The first virtual machine is going to be our domain controller which is going to house active directory (AD). This virtual machine will have two network adapters, one is going to be used to connect to the outside internet and the other one will be used to connect to the private network of the virtual box that the clients are going to connect to. 
