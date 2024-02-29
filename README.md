@@ -19,7 +19,8 @@ This project details how to setup a basic home lab running active directory usin
 
 <p align="center">
 
-Firstly, I installed virtual box which will be used to run the virtual machines on. Subsequently I installed a windows 10 ISO and a server 2019 ISO that I am going to use to install the two operating systems on two separate virtual machines. 
+Firstly, I installed virtual box which will be used to run the virtual machines on. Subsequently I installed a windows 10 ISO and a server 2019 ISO that I am going to use to install the two operating systems on two separate virtual machines. See links below. 
+
 https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019
 https://www.microsoft.com/en-us/software-download/windows10ISO
 <br />
