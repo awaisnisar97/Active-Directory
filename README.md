@@ -31,7 +31,7 @@ The first virtual machine is going to be our domain controller which is going to
 
 
 Once the virtual machines are created, we are going to assign server 2019 on it and assign IP addressing for the internal network. The external network will automatically get IP addressing from my home network. Next, we are going to install AD and create our domain, then we will configure NAT and routing so the clients on the private network can reach the internet through the domain controller. 
-<img src="https://imgur.com/DXY8pIg.png" height="80%" width="100%" />
+<img src="https://imgur.com/opVZfuW.png" height="80%" width="100%" />
 
 Next we are going to install active directory domain services (ADDS) and create a domain. 
 <img src="hhttps://imgur.com/54oBv3I.png" height="80%" width="100%" />
