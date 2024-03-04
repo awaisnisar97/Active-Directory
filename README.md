@@ -68,21 +68,9 @@ Upload the script, enable excution policy to unrestricted. Going back to the AD 
 
 
 We will create another VM and install windows 10 on it, this VM will be created to the private virtual box network. We are going to name it client 1 and join it to the domain and log in to it using our domain accounts. 
-<img src="https://imgur.com/4XyoWyk.png" height="80%" width="100%" />
-<img src="https://imgur.com/tcGNGMz.png" height="80%" width="100%" />
+<img src="https://imgur.com/YJJWRd1.png" height="80%" width="100%" />
+<img src="https://imgur.com/8pCHbI4.png" height="80%" width="100%" />
+<img src="https://imgur.com/3HG0YgI.png" height="80%" width="100%" />
 
 
 This project provides hands-on experience with core network infrastructure. AD is fundamental for managing users, groups, and resources, offering insight into access control, authentication, and Group Policy management.
-<img src=".png" height="80%" width="100%" />
-<br />
-<br />
- After both installations, I proceeded to scan the Windows sandbox to identify vulnerabilities on the endpoint. The scan returned eighteen vulnerabilities with one "Medium" severity and a CVSS of 5.3. Other vulnerabilities in providing information were also looked at and taken notice of.<br/>
-<img src="https://imgur.com/OjVQbkk.png" height="80%" width="100%" />
-<br />
-<br />
- I proceeded to conduct a more in-depth scanning through Credential scanning. With this, I had to grant permission to the sandbox environment to connect remotely. I did this by enabling the Remote Registry to be automatic, turning on the advanced sharing setting and creating a LocalAccountTokenFilterPolicy to grant access as directed by Nesus documentation for connecting remotely with users on a different network. I then restarted the computer for the new setting to take effect. <br/>
-<img src="https://i.imgur.com/KlDVpk2.png" height="80%" width="100%" />
-<img src="https://i.imgur.com/QLCIAWz.png" height="80%" width="100%" />
-<img src="https://i.imgur.com/5WGJhDz.png" height="80%" width="100%" />
-<br />  
-
