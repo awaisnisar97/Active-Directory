@@ -70,6 +70,8 @@ Upload the script, enable excution policy to unrestricted. Going back to the AD 
 We will create another VM and install windows 10 on it, this VM will be created to the private virtual box network. We are going to name it client 1 and join it to the domain and log in to it using our domain accounts. 
 <img src="https://imgur.com/YJJWRd1.png" height="80%" width="100%" />
 <img src="https://imgur.com/8pCHbI4.png" height="80%" width="100%" />
+
+Lastly we will log in to the windows 10 VM as Mydomain account.  
 <img src="https://imgur.com/3HG0YgI.png" height="80%" width="100%" />
 
 
