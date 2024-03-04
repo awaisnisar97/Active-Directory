@@ -36,12 +36,22 @@ Once the virtual machines are created, we are going to assign server 2019 on it 
 Next we are going to install active directory domain services (ADDS) and create a domain. 
 <img src="hhttps://imgur.com/54oBv3I.png" height="80%" width="100%" />
 <img src="https://imgur.com/ww12OKi.png" height="80%" width="100%" />
-<img src=".png" height="80%" width="100%" />
-<img src=".png" height="80%" width="100%" />
+
+Once installed, you will notice a yellow flag next to manage, click on that to do a post eployment configuration of the ADDS. This is to create the domain itself.
+<img src="https://imgur.com/7GeK8Bk.png" height="80%" width="100%" />
+
+The VM will restart once installed. 
+We are going to create our own dedicated domain admin account. An organisational unit will be created to put the admin account in, create a new user in the admin folder 
+<img src="https://imgur.com/xd9ov4Q.png" height="80%" width="100%" />
+<img src="https://imgur.com/8WEG5Ny.png" height="80%" width="100%" />
+
+Select properties and add in domain admin. 
+<img src="https://imgur.com/d3Jef0a.png" height="80%" width="100%" />
+Following this we will log out and log in again using our admin account. 
 
 
 DHCP will be set up on the domain controller, so when we create our windows 10 VM it can automatically get an IP address. Lastly, we run a powershell script which will be obtained for this project, this will automatically create a thousand users in AD. We will create another VM and install windows 10 on it, this VM will be created to the private virtual box network. We are going to name it client 1 and join it to the domain and log in to it using our domain accounts. 
-<img src="https://imgur.com/JUSeSi1.png" height="80%" width="100%" />
+<img src="https://imgur.com/8WEG5Ny.png" height="80%" width="100%" />
 
 
 This project provides hands-on experience with core network infrastructure. AD is fundamental for managing users, groups, and resources, offering insight into access control, authentication, and Group Policy management.
