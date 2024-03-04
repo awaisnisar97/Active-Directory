@@ -73,4 +73,4 @@ We will create another VM and install windows 10 on it, this VM will be created 
 <img src="https://imgur.com/3HG0YgI.png" height="80%" width="100%" />
 
 
-This project provides hands-on experience with core network infrastructure. AD is fundamental for managing users, groups, and resources, offering insight into access control, authentication, and Group Policy management.
+
