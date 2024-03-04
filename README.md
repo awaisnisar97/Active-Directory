@@ -51,7 +51,6 @@ Following this we will log out and log in again using our admin account.
 
 RAS/NAT (remote access server/netwrok address translation) will now be installed. The purpose of this is to allow the windows 10 client to be on a private virtual network but still be able to access the internet through the domain controller. Install RAS/NAT on domain controller. 
 <img src="https://imgur.com/jpXCaOb.png" height="80%" width="100%" />
-<img src="https://imgur.com/uY9hfBO.png" height="80%" width="100%" />
 <img src="https://imgur.com/OjVQbkk.png" height="80%" width="100%" />
 <img src="https://imgur.com/OIrWgGI.png" height="80%" width="100%" />
 <img src="https://imgur.com/tcGNGMz.png" height="80%" width="100%" />
