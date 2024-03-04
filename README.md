@@ -49,9 +49,14 @@ Select properties and add in domain admin.
 <img src="https://imgur.com/d3Jef0a.png" height="80%" width="100%" />
 Following this we will log out and log in again using our admin account. 
 
+RAS/NAT (remote access server/netwrok address translation) will now be installed. The purpose of this is to allow the windows 10 client to be on a private virtual network but still be able to access the internet through the domain controller. Install RAS/NAT on domain controller. 
+<img src="https://imgur.com/jpXCaOb.png" height="80%" width="100%" />
+<img src="https://imgur.com/OjVQbkk.png" height="80%" width="100%" />
+
 
 DHCP will be set up on the domain controller, so when we create our windows 10 VM it can automatically get an IP address. Lastly, we run a powershell script which will be obtained for this project, this will automatically create a thousand users in AD. We will create another VM and install windows 10 on it, this VM will be created to the private virtual box network. We are going to name it client 1 and join it to the domain and log in to it using our domain accounts. 
-<img src="https://imgur.com/8WEG5Ny.png" height="80%" width="100%" />
+<img src="https://imgur.com/jpXCaOb.png" height="80%" width="100%" />
+<img src="https://imgur.com/OjVQbkk.png" height="80%" width="100%" />
 
 
 This project provides hands-on experience with core network infrastructure. AD is fundamental for managing users, groups, and resources, offering insight into access control, authentication, and Group Policy management.
@@ -59,7 +64,7 @@ This project provides hands-on experience with core network infrastructure. AD i
 <br />
 <br />
  After both installations, I proceeded to scan the Windows sandbox to identify vulnerabilities on the endpoint. The scan returned eighteen vulnerabilities with one "Medium" severity and a CVSS of 5.3. Other vulnerabilities in providing information were also looked at and taken notice of.<br/>
-<img src="https://i.imgur.com/RcBSPmq.png" height="80%" width="100%" />
+<img src="https://imgur.com/OjVQbkk.png" height="80%" width="100%" />
 <br />
 <br />
  I proceeded to conduct a more in-depth scanning through Credential scanning. With this, I had to grant permission to the sandbox environment to connect remotely. I did this by enabling the Remote Registry to be automatic, turning on the advanced sharing setting and creating a LocalAccountTokenFilterPolicy to grant access as directed by Nesus documentation for connecting remotely with users on a different network. I then restarted the computer for the new setting to take effect. <br/>
@@ -67,23 +72,4 @@ This project provides hands-on experience with core network infrastructure. AD i
 <img src="https://i.imgur.com/QLCIAWz.png" height="80%" width="100%" />
 <img src="https://i.imgur.com/5WGJhDz.png" height="80%" width="100%" />
 <br />  
-I configured the Credential scanning on my pc by validating it with the credentials of the sandbox OS and running the scan. It took quite some time to scan, s it returned more high-severity vulnerabilities.<br />
-  <br/>
-<img src="https://i.imgur.com/BokhzoX.png" height="80%" width="100%" />
-<img src="https://i.imgur.com/H42DiuN.png" height="80%" width="100%" />
-<br />
-<br />
- Additionally, an old version of Firefox version was also installed on the sandbox to perform scanning tests.<br/>
-<img src="https://i.imgur.com/bNcZEEx.png" height="80%" width="100%" />
-<br />
-<br />
-The results returned had more critical vulnerabilities that required immediate attention. The remedies for the vulnerabilities were to apply an update to the system.<br/>
-<img src="https://i.imgur.com/HdmcJJL.png" height="80%" width="100%" />
-<img src="https://i.imgur.com/nUuPWwH.png" height="80%" width="100%" />
-<br />
-<br />
- The sandbox system was updated, and the main critical issue was the deprecated Firefox. It was realised that most vulnerabilities identified after the update were for informational purposes. <br/>
-<img src="https://i.imgur.com/OsSzoNC.png" height="80%" width="100%" />
-<br />
-<br />
 
